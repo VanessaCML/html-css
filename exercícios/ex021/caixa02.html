@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /* Para evitar a sofrência com margin e border, 
+        começar o style com:
+
+        * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+}   
+        Isso zera todos esses parâmetros.
+         */
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(206, 192, 161, 0.582);
+            margin: 0px;            
+        }
+
+        header{            
+            background-color: rgb(247, 246, 202);
+            padding: 10px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow:
+	        inset 0 -3em 3em rgba(224, 2, 2, 0.1),	
+	        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            /*box-shadow: 1px 1px 8px rgba(133, 103, 59, 0.432);*/
+        }
+
+        nav{
+            background-color: rgba(255, 228, 196, 0.438);
+            padding: 5px;    
+            border-radius: 5px;        
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(173, 139, 44);
+            font-weight: 500;
+            margin-right: 5px;
+        }
+
+        p > a{
+            text-decoration: none;
+            color: rgb(173, 139, 44);
+            font-weight: 500;
+            margin-right: 10px;
+            background-color: bisque;
+            padding: 5px;
+            border-radius: 5px;
+        }    
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgb(247, 246, 202);
+            padding: 10px;
+            margin: 50px;
+            border-radius: 10px 50px;
+            box-shadow: 2px 5px 16px 3px rgba(133, 104, 59, 0.432);
+        }
+
+        article{
+            background-color: azure;
+            padding: 1px 10px;
+            text-align: justify;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        article > section{
+            background-color: rgb(227, 236, 243);
+            padding: 50px;
+            border-radius: 50%;
+            height: 380px;
+            width: 380px;
+            line-height: 150%;
+            margin-left: auto;
+            font-size: small;
+            
+        }
+
+        section > section > p{
+            text-align: right;
+        }
+
+        section > h1{
+            text-align: center;
+        }
+
+        article > aside{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            font-weight: 600;
+            color: rgb(82, 17, 5);
+            text-align: right;
+        }
+
+        p{
+            text-indent: 20px;
+        }
+
+        section > p{
+            text-align: center;
+        }
+
+        footer{
+            background-color: rgba(83, 42, 6, 0.603);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+            font-size: small;
+        }
+
+        footer > p{
+            margin: 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <section>
+                <p><a href="#">Esportes</a> 
+                    <a href="#">Tecnologia</a> 
+                    <a href="#">Saúde</a></p>
+            </section>
+            <article>
+                <h2>Título do artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt iste amet quidem totam perferendis distinctio natus dolore, doloribus enim! Laborum qui quae nam est nemo minima expedita soluta veniam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab cupiditate similique explicabo cumque id pariatur voluptates doloremque enim? Laboriosam numquam dolorum laborum nobis expedita est odit aliquam laudantium esse cum.</p>
+                <section>
+                    <h1>Título da seção</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam aspernatur natus maxime repellendus dicta voluptas omnis veritatis officia minus dolor fugit, velit, at reprehenderit totam consectetur nam cumque magnam eum! Repellat eligendi voluptas, quos ullam quae quidem, doloremque saepe labore, qui suscipit explicabo necessitatibus! Aperiam atque repudiandae corrupti possimus id magni obcaecati non ipsam incidunt ex, quas quos consequatur quod fugiat eveniet quidem dicta hic! Maiores rerum ea quidem similique vel cupiditate veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quaerat unde molestias ratione nostrum in non, harum consequatur, deserunt exercitationem sequi aut omnis fuga laboriosam, commodi optio excepturi dolorum.</p>                    
+                </section>
+                <aside>
+                    <p>Escrito por Fulaninho</p>
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Título do artigo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio blanditiis facilis itaque quaerat porro sit in qui sequi! Non, maxime quisquam! Vero quasi amet id ex aspernatur ut, sapiente enim ratione adipisci accusantium, at vel similique voluptatibus voluptate eveniet. Cum pariatur sunt atque sapiente libero beatae deserunt, voluptatem earum facilis aut ducimus porro vel alias, distinctio esse sit corrupti. Harum expedita ab ad repudiandae corporis quam est. Ad cumque sequi ducimus dolor labore dolorem sint deleniti, vero totam sunt ut nam quasi corporis asperiores minima sit praesentium fugit blanditiis molestiae. Iste non minima ullam eius tempore vitae enim facere nemo.</p>
+                <aside>
+                    <p>Escrito por Fulaninho</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por VT</p>
+    </footer>
+</body>
+</html>

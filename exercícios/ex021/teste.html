@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col-sm-2 p {
+    border: 2px solid #e3e3e3;
+    border-radius: 50%;
+    height: 175px;
+    line-height: 175px;
+    width: 175px;
+    text-align: center;
+    position:relative;
+    background:#fff;
+}
+
+.col-sm-2 p:after{
+    position:absolute;
+    content:"";
+    width:110%;
+    height:110%;
+    background:linear-gradient(142deg, #ED586A, #ED844A);
+    top:-5%;
+    left:-5%;
+    z-index:-1;
+    border-radius:50%;
+}
+    </style>
+</head>
+<body>
+    <div class="col-sm-2">
+        <p class="inner-text">TITLE</p>
+    </div>
+</body>
+</html>
