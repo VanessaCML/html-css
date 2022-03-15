@@ -21,7 +21,7 @@
 
 html, body{
     min-height: 100%; /* ou 100vh*/
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
     background-color: rgb(212, 185, 150);
 }
