@@ -22,7 +22,7 @@ html, body{
 
 header{
     height: 40vh;
-    min-height: 220px;
+    min-height: 300px;
     width: 100%;
     background-image: url('../imagens/homem.jpg');
     background-position: center center;
@@ -65,7 +65,7 @@ header a:hover, footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 2em;
     font-family: var(--font1);
     font-size: 1.4em;
@@ -83,7 +83,8 @@ section{
 .img > p{
     background-color: rgba(130, 226, 230, 0.452);
     padding: 10px;
-    width: 400px;
+    width: 300px;
+    min-width: 200px;
     border-radius: 10px;
 
 }
