@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
 *{
     margin: 0px;
     border: 0px;
@@ -13,16 +16,19 @@
 :root{
     --font0: 'Montserrat', sans-serif;
     --font1: 'League Spartan', sans-serif;
+    --font2: 'Amatic SC', cursive;
 }
 
 html, body{
     min-height: 100%; /* ou 100vh*/
-    background-color: antiquewhite;
+    max-width: 1024px;
+    margin: auto;
+    background-color: rgb(212, 185, 150);
 }
 
 header{
     height: 40vh;
-    min-height: 300px;
+    min-height: 250px;
     width: 100%;
     background-image: url('../imagens/homem.jpg');
     background-position: center center;
@@ -33,28 +39,32 @@ header{
 
 header h1{
     text-align: center;
-    padding-top: 13vh;    
+    padding: 13vh 0vh 0vh 0vh;    
     font-family: var(--font0);
-    font-size: 4em;
+    font-size: clamp(3em, 5vw, 8em);
     font-weight: normal;
     color: rgb(66, 46, 20);
     font-variant: small-caps;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.164);
+    background-color: rgba(240, 248, 255, 0.164);
 }
 
 header p{
     text-align: center;
-    padding-top: 2vh;
+    padding-bottom: 18vh;
     font-family: var(--font0);
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: normal;
     color: rgb(66, 46, 20);
     font-variant: small-caps;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.164);
+    background-color: rgba(240, 248, 255, 0.164);
 }
 
 header a, footer a{
     text-decoration: none;
-    color: rgba(134, 51, 18, 0.877);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #7c4e13;
+    font-family: var(--font0)
 }
 
 header a:hover, footer a:hover{
@@ -66,10 +76,15 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 20px;
-    line-height: 2em;
-    font-family: var(--font1);
-    font-size: 1.4em;
-    font-weight: 400;
+    line-height: 1.5em;
+    font-family: var(--font2);
+    font-size: clamp(2em, 3vw, 3em);
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 .normal{
@@ -78,22 +93,37 @@ section{
 
 .img{
     background-color: bisque;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);    
+    background-attachment: fixed;
 }
 
 .img > p{
-    background-color: rgba(130, 226, 230, 0.452);
+    background-color: #457087dc;
+    color: antiquewhite;
     padding: 10px;
-    width: 300px;
-    min-width: 200px;
+    display: inline-block;
     border-radius: 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.26);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.199);    
+}
 
+#img01{
+    background-image: url('../imagens/flor.jpg');
+    background-position: center center;  
+    background-size: cover;  
+}
+
+#img02{
+    background-image: url('../imagens/carta.jpg');
+    background-position: right right;    
 }
 
 footer{
     text-align: center;
-    background-color: rgb(255, 207, 144);
-    padding: 14px;
-    color: rgb(151, 98, 29);
-    font-family: var(--font1);
-    font-size: 1.3em;
+    background-color: rgb(212, 185, 150);
+    padding: 20px;
+    color: rgb(82, 58, 24);
+    font-family: var(--font0);
+    font-size: 1em;
+    font-stretch: condensed;
 }
