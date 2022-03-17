@@ -178,5 +178,5 @@ footer{
     color: rgb(82, 58, 24);
     font-family: var(--font0);
     font-size: 1em;
-    font-stretch: condensed;
+    font-stretch: normal;
 }
