@@ -4,8 +4,5 @@
 <ul>
     <li>
     <a href="https://vanessacml.github.io/projeto-android/">01 - Site Android</a>
-    </li>
-    <li>
-    <a href="https://vanessacml.github.io/projeto-cordel/">01 - Site Cordel</a>
-    </li>    
+    </li>   
 </ul>
