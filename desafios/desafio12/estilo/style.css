@@ -53,9 +53,9 @@ header{
 
 header h1{
     text-align: center;
-    padding: 13vh 0vh 0vh 0vh;    
-    font-family: var(--font4);
-    font-size: clamp(3em, 5vw, 8em);
+    padding: 11vh 0vh 0vh 0vh;    
+    font-family: var(--font3);
+    font-size: clamp(3em, 7vw, 8em);
     font-weight: normal;
     color: rgb(66, 46, 20);
     font-variant: small-caps;
@@ -66,7 +66,7 @@ header h1{
 header p{
     text-align: center;
     padding-bottom: 18vh;
-    font-family: var(--font4);
+    font-family: var(--font3);
     font-size: 1.6em;
     font-weight: normal;
     color: rgb(66, 46, 20);
