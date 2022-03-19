@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            padding: 5px;
+            line-height: 1.5em;
+            text-indent: 20px;
+        }
+
+        table{
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(179, 179, 179);
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        td, th{
+            border: 1px solid black;          
+        }
+
+        th{
+            padding: 14px;
+        }
+
+        td{
+            padding: 6px;
+            text-align: center;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        .estado{
+            text-align: left;
+        }
+
+        thead, tfoot{
+            background-color: rgb(68, 68, 68);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: hsl(34, 100%, 85%);
+        }
+
+        tbody tr:nth-child(even){
+            background-color: hsl(256, 100%, 85%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 100px;">Unidade federativa</th>
+                <th scope="col" style="width: 90px;">População (2021)</th>
+                <th scope="col" style="width: 90px;">% da pop. total</th>
+                <th scope="col" >País comparável (habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="estado">São Paulo</td>
+                <td class="num">46 649 132</td>
+                <td>21,9%</td>
+                <td> Espanha (46 439 864)</td>
+            </tr>
+            <tr>
+                <td class="estado">Minas Gerais</td>
+                <td class="num">21 411 923</td>
+                <td>10,1%</td>
+                <td>Sri Lanka (20 675 000)</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+            <tr>
+                <td class="estado">Bahia</td>
+                <td class="num">14 985 284</td>
+                <td>7,1%</td>
+                <td>Chade (14 037 000)</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraná</td>
+                <td class="num">11 597 484	</td>
+                <td>5,4%</td>
+                <td>Bolívia (11 410 651)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at ipsa cumque earum dolores quia, explicabo cum, adipisci natus asperiores dolorum iste amet, exercitationem corrupti dolor repellat est eos labore voluptatum tempore nam nulla vitae suscipit. Aperiam odit sint, facilis ex tenetur quidem molestiae assumenda, obcaecati quis libero accusamus tempore nulla reiciendis ipsam doloribus dolores porro repellat iure nobis ad non repellendus deserunt dolorum blanditiis? Omnis, sunt ipsum natus dicta, hic similique velit itaque nihil aperiam sapiente at quos? Commodi voluptate fugit ipsam nesciunt minus error porro, deleniti ducimus rem ad optio? Facilis a facere adipisci earum cum esse? Nulla quasi aspernatur excepturi provident maiores numquam a distinctio voluptatem eum reprehenderit nisi quia, ex qui at laborum dolores, velit quis eligendi ullam sapiente vero voluptate. Id, repellat est. Deserunt, quis? Ad, quae quo ut eum autem ea corrupti. Distinctio dignissimos expedita natus asperiores itaque facere ex reprehenderit nam tenetur debitis, aspernatur omnis ratione fuga doloremque doloribus, eos quidem id deleniti adipisci explicabo? Quos est culpa, sit aliquid labore autem magnam commodi dolores, obcaecati sequi aut nostrum, perferendis ad? Atque placeat nihil, dolores optio non consectetur recusandae officiis voluptatum quisquam quo esse eveniet delectus dolore natus hic impedit reiciendis explicabo! Non.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at ipsa cumque earum dolores quia, explicabo cum, adipisci natus asperiores dolorum iste amet, exercitationem corrupti dolor repellat est eos labore voluptatum tempore nam nulla vitae suscipit. Aperiam odit sint, facilis ex tenetur quidem molestiae assumenda, obcaecati quis libero accusamus tempore nulla reiciendis ipsam doloribus dolores porro repellat iure nobis ad non repellendus deserunt dolorum blanditiis? Omnis, sunt ipsum natus dicta, hic similique velit itaque nihil aperiam sapiente at quos? Commodi voluptate fugit ipsam nesciunt minus error porro, deleniti ducimus rem ad optio? Facilis a facere adipisci earum cum esse? Nulla quasi aspernatur excepturi provident maiores numquam a distinctio voluptatem eum reprehenderit nisi quia, ex qui at laborum dolores, velit quis eligendi ullam sapiente vero voluptate. Id, repellat est. Deserunt, quis? Ad, quae quo ut eum autem ea corrupti. Distinctio dignissimos expedita natus asperiores itaque facere ex reprehenderit nam tenetur debitis, aspernatur omnis ratione fuga doloremque doloribus, eos quidem id deleniti adipisci explicabo? Quos est culpa, sit aliquid labore autem magnam commodi dolores, obcaecati sequi aut nostrum, perferendis ad? Atque placeat nihil, dolores optio non consectetur recusandae officiis voluptatum quisquam quo esse eveniet delectus dolore natus hic impedit reiciendis explicabo! Non.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at ipsa cumque earum dolores quia, explicabo cum, adipisci natus asperiores dolorum iste amet, exercitationem corrupti dolor repellat est eos labore voluptatum tempore nam nulla vitae suscipit. Aperiam odit sint, facilis ex tenetur quidem molestiae assumenda, obcaecati quis libero accusamus tempore nulla reiciendis ipsam doloribus dolores porro repellat iure nobis ad non repellendus deserunt dolorum blanditiis? Omnis, sunt ipsum natus dicta, hic similique velit itaque nihil aperiam sapiente at quos? Commodi voluptate fugit ipsam nesciunt minus error porro, deleniti ducimus rem ad optio? Facilis a facere adipisci earum cum esse? Nulla quasi aspernatur excepturi provident maiores numquam a distinctio voluptatem eum reprehenderit nisi quia, ex qui at laborum dolores, velit quis eligendi ullam sapiente vero voluptate. Id, repellat est. Deserunt, quis? Ad, quae quo ut eum autem ea corrupti. Distinctio dignissimos expedita natus asperiores itaque facere ex reprehenderit nam tenetur debitis, aspernatur omnis ratione fuga doloremque doloribus, eos quidem id deleniti adipisci explicabo? Quos est culpa, sit aliquid labore autem magnam commodi dolores, obcaecati sequi aut nostrum, perferendis ad? Atque placeat nihil, dolores optio non consectetur recusandae officiis voluptatum quisquam quo esse eveniet delectus dolore natus hic impedit reiciendis explicabo! Non.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at ipsa cumque earum dolores quia, explicabo cum, adipisci natus asperiores dolorum iste amet, exercitationem corrupti dolor repellat est eos labore voluptatum tempore nam nulla vitae suscipit. Aperiam odit sint, facilis ex tenetur quidem molestiae assumenda, obcaecati quis libero accusamus tempore nulla reiciendis ipsam doloribus dolores porro repellat iure nobis ad non repellendus deserunt dolorum blanditiis? Omnis, sunt ipsum natus dicta, hic similique velit itaque nihil aperiam sapiente at quos? Commodi voluptate fugit ipsam nesciunt minus error porro, deleniti ducimus rem ad optio? Facilis a facere adipisci earum cum esse? Nulla quasi aspernatur excepturi provident maiores numquam a distinctio voluptatem eum reprehenderit nisi quia, ex qui at laborum dolores, velit quis eligendi ullam sapiente vero voluptate. Id, repellat est. Deserunt, quis? Ad, quae quo ut eum autem ea corrupti. Distinctio dignissimos expedita natus asperiores itaque facere ex reprehenderit nam tenetur debitis, aspernatur omnis ratione fuga doloremque doloribus, eos quidem id deleniti adipisci explicabo? Quos est culpa, sit aliquid labore autem magnam commodi dolores, obcaecati sequi aut nostrum, perferendis ad? Atque placeat nihil, dolores optio non consectetur recusandae officiis voluptatum quisquam quo esse eveniet delectus dolore natus hic impedit reiciendis explicabo! Non.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex at ipsa cumque earum dolores quia, explicabo cum, adipisci natus asperiores dolorum iste amet, exercitationem corrupti dolor repellat est eos labore voluptatum tempore nam nulla vitae suscipit. Aperiam odit sint, facilis ex tenetur quidem molestiae assumenda, obcaecati quis libero accusamus tempore nulla reiciendis ipsam doloribus dolores porro repellat iure nobis ad non repellendus deserunt dolorum blanditiis? Omnis, sunt ipsum natus dicta, hic similique velit itaque nihil aperiam sapiente at quos? Commodi voluptate fugit ipsam nesciunt minus error porro, deleniti ducimus rem ad optio? Facilis a facere adipisci earum cum esse? Nulla quasi aspernatur excepturi provident maiores numquam a distinctio voluptatem eum reprehenderit nisi quia, ex qui at laborum dolores, velit quis eligendi ullam sapiente vero voluptate. Id, repellat est. Deserunt, quis? Ad, quae quo ut eum autem ea corrupti. Distinctio dignissimos expedita natus asperiores itaque facere ex reprehenderit nam tenetur debitis, aspernatur omnis ratione fuga doloremque doloribus, eos quidem id deleniti adipisci explicabo? Quos est culpa, sit aliquid labore autem magnam commodi dolores, obcaecati sequi aut nostrum, perferendis ad? Atque placeat nihil, dolores optio non consectetur recusandae officiis voluptatum quisquam quo esse eveniet delectus dolore natus hic impedit reiciendis explicabo! Non.</p>
+
+</body>
+</html>
